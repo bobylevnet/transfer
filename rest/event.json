@@ -1,0 +1,19 @@
+{ "REST.FUNC":
+{    "method": {
+        "update": {"params": "n,g,"},
+        "delete" : {"params": {}},
+        "insert" :{"params": {}, "data": {} },
+        "getone": {"params": {}},
+        "getall": {"params": {}},
+        "find": {"params": {}}
+    },
+   "id" : ""  
+},
+"REST.TABLE" : {
+    "model" :"tr_files;tr_users;"
+}
+}
+
+
+
+

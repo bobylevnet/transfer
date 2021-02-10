@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+
+
+
+<meta charset="utf-8" />
+
+<title>Документ без названия</title>
+</head>
+<body>
+
+<div id="app">
+  {{results}}
+</div>
+
+
+
+
+
+<script src="vue.js"></script>
+<script src="axios.js"></script>
+
+// Test.vue
+<script>
+
+//insert
+const url = 'http://localhost:89/route?rest={"model": "files", "action": "insert"}&dataJS={"id_user":"1","path_file":"/111/111/111/2.zip", "date_create":"08.02.2021", "date_delete":"09.02.2021","type_file":"zip"}';
+
+//фильрует по одному полю 
+const url2 = 'http://localhost:89/route?rest={"model": "files", "action": "find"}&dataJS={"path_file":"/111"}';
+
+//выборка всех записей
+const url1 = 'http://localhost:89/route?rest={"model": "files", "action": "findall"}&dataJS={"id" : "", "id_us":"","path_file":"", "date_create":"", "date_delete":"","type_file":""}';
+
+
+//выборка одной записи
+const url3 = 'http://localhost:89/route?rest={"model": "files", "action": "findone"}&dataJS={}&idpk=2';
+
+
+//insert
+const url6 = 'http://localhost:89/route?rest={"model": "users", "action": "insert"}&dataJS={"user_name":"asdsdaf","user_ad_name":"fasdfasdf", "user_name_ru":"08.02.2021"}';
+
+
+//выборка одной записи
+const url4 = 'http://localhost:89/route?rest={"model": "files", "action": "update"}&dataJS={"date_delete":"2021-10-02"}&idpk=2';
+
+//удаление записи
+const url5 = 'http://localhost:89/route?rest={"model": "files", "action": "delete"}&dataJS={}&idpk=2';
+
+const vm = new Vue({
+        el: '#app',
+        data: {
+          results: []
+        },
+        mounted() {
+          axios.get(url6).then(response => {
+            this.results = response.data
+          })
+        }
+    });
+</script>
+
+</body>
+</html>
