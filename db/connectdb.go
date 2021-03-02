@@ -23,7 +23,6 @@ type manager struct {
 var Mgr Getdtbs
 
 func init() {
-	// init is invoked before main()
 
 	e := godotenv.Load()
 	if e != nil {

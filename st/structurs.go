@@ -32,3 +32,13 @@ type Upload struct {
 	IDUser     int    `db:"id_user"`
 	Idtarget   int    `db:"id_target"`
 }
+
+//Auhthb - структура возврата авторизации bitrix
+type Auhthb struct {
+	AccessToken string
+	UserID      int
+	ClientID    int
+	Expires     int
+	Scope       string
+	UserName    string
+}

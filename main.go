@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"net/http"
 	"strconv"
+	a "transfer/auth"
 	cnt "transfer/controllers"
+	l "transfer/log"
 	"transfer/models"
 
 	"github.com/gorilla/mux"
@@ -14,6 +16,7 @@ import (
 func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/route", getRoute)
+	router.HandleFunc("/auth", auth)
 	//добавляем корневой путь для статики
 	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./web/")))
 	http.ListenAndServe(":89", router)
@@ -72,5 +75,17 @@ func convertJS(stst *map[string]string, reqJSON string) {
 	if err != nil {
 		panic(err)
 	}
+
+}
+
+func auth(w http.ResponseWriter, r *http.Request) {
+
+	au := a.Auth()
+	t := models.Chekuser(au.UserName, au.AccessToken)
+	res, err := json.Marshal(t)
+
+	l.WriteError(err)
+
+	fmt.Fprintf(w, string(res))
 
 }

@@ -24,7 +24,8 @@
 
 // Test.vue
 <script>
-
+  //auth
+  const url8 = 'http://localhost:89/auth';
 //insert
 const url = 'http://localhost:89/route?rest={"model": "rrr", "action": "insert"}&datajs={"test":"1","test2":"111", "test1":"01.01.2020"}';
 
@@ -56,7 +57,7 @@ const vm = new Vue({
           results: []
         },
         mounted() {
-          axios.get(url2).then(response => {
+          axios.get(url8).then(response => {
             this.results = response.data
           })
         }
