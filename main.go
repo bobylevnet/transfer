@@ -25,7 +25,7 @@ func getRoute(w http.ResponseWriter, r *http.Request) {
 	dataDT := map[string]string{}
 
 	actionRQ, _ := r.URL.Query()["rest"]
-	dataRQ, _ := r.URL.Query()["dataJS"]
+	dataRQ, _ := r.URL.Query()["datajs"]
 	idpkRQ, _ := r.URL.Query()["idpk"]
 
 	convertJS(&actionDT, actionRQ[0])
@@ -49,11 +49,22 @@ func getRoute(w http.ResponseWriter, r *http.Request) {
 
 	//предаем адрес  записи
 	//неправильно нужно пределать обработчик ошибок должен быть реализован везде
-	bm.Writeerror = &wr
 
-	cnt.ActionController(bm, actionDT, wr, dataDT)
+	bm.Writeerror = &wr
+	if r.Method == "POST" {
+
+		bm.Request = r
+
+		cnt.ActionController(bm, actionDT, wr, dataDT)
+	} else {
+		cnt.ActionController(bm, actionDT, wr, dataDT)
+	}
 
 }
+
+/* func do(w http.ResponseWriter, r *http.Request) {
+	go getRoute(w, r)
+} */
 
 func convertJS(stst *map[string]string, reqJSON string) {
 	b := []byte(reqJSON)

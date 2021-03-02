@@ -1,0 +1,5 @@
+[http]
+	proxy = http://proxy.ngd.ru:8080
+[user]
+	email = bobylevnet@gmail.com
+	name = Bob

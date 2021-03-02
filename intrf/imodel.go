@@ -6,11 +6,14 @@ import (
 
 //Model -  модели поиска
 type Model interface {
-	Update(modelUpdate *st.Abstracttbl, result *string) bool
+	Update(modelUpdate st.Abstracttbl, result *string) bool
 	Delete() bool
-	Insert(modelInsert *st.Abstracttbl) int
-	Getone(modelFind *st.Abstracttbl, result *string)
-	Find(modelFind *st.Abstracttbl, result *string)
-	Getall(modelFind *st.Abstracttbl, result *string)
+	Insert(modelInsert st.Abstracttbl) int
+	Getone(modelFind st.Abstracttbl, result *string)
+	Find(modelFind st.Abstracttbl, result *string)
+	Getall(modelFind st.Abstracttbl, result *string)
 	Gettable() string
+	Gettablemeta(model st.Abstracttbl, result *string)
+	Upload(model st.Abstracttbl, result *string)
+	FindWhere(model st.Abstracttbl, result *string)
 }

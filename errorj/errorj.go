@@ -13,10 +13,12 @@ type Errormessage struct {
 func (m Errormessage) Checkerror(w intrf.Iwriteresponse, mess string, err error) {
 
 	if err != nil {
+		var ms string
 		m.Error = true
 		m.Message = mess + " : " + err.Error()
 		bin, _ := json.Marshal(m)
-		w.Writeresponse(string(bin))
+		ms = string(bin)
+		w.Writeresponse(&ms)
 
 	}
 

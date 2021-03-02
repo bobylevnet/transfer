@@ -9,6 +9,8 @@ type Writecontroller struct {
 	T http.ResponseWriter
 }
 
-func (w Writecontroller) Writeresponse(result string) {
-	fmt.Fprintf(w.T, result)
+func (w Writecontroller) Writeresponse(result *string) {
+
+	fmt.Fprintf(w.T, *result)
+	*result = ""
 }
