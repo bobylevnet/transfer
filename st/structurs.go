@@ -6,10 +6,16 @@ type Event struct {
 	Action string
 }
 
-// Abstracttbl - струкутра данных табблицы
+// Abstracttbl - струкутра данных таблицы
 type Abstracttbl struct {
 	Idpk int
 	Dt   map[string]string
+}
+
+// Filtered структура для фильтра  полей
+
+type Abstracttblnew struct {
+	Id int
 }
 
 //Metadatatable метаданные таблицы

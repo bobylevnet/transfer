@@ -131,11 +131,11 @@ func (b Basemodel) Find(modelFind st.Abstracttbl, result *string) {
 	loadmodel(modelFind.Dt)
 	generatmeta(b.Gettable(), &dyn)
 	//фильтр по одному полю
-
 	for key, value := range modelFind.Dt {
 		filter += key + " LIKE '" + value + "%'"
 	}
 	//сделать обработчик sql иньекций
+	//sqlandwhere := "and where "
 	sql = fmt.Sprintf(`SELECT * FROM %s where  %s`, b.Gettable(), filter)
 	rows, err = db.Mgr.GetDB().Queryx(sql)
 	chker.Checkerror(b.Writeerror, "FIND", err)
@@ -159,7 +159,7 @@ func (b Basemodel) FindWhere(modelFind st.Abstracttbl, result *string) {
 		if i == 0 {
 			filter = key + "=" + value
 		} else {
-			filter = filter + " and " + key + "=" + value
+			filter = filter + " AND " + key + "=" + value
 		}
 		i++
 	}

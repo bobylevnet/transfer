@@ -33,3 +33,22 @@
 {"level":"error","ts":"2021-03-02T16:56:39.364+0500","message":"ERROR: missing FROM-clause entry for table \"bobylev\" (SQLSTATE 42P01)"}
 {"level":"error","ts":"2021-03-02T16:56:39.387+0500","message":"ERROR: missing FROM-clause entry for table \"bobylev\" (SQLSTATE 42P01)"}
 {"level":"error","ts":"2021-03-02T16:56:39.391+0500","message":"ERROR: missing FROM-clause entry for table \"bobylev\" (SQLSTATE 42P01)"}
+{"level":"error","ts":"2021-03-03T08:28:00.818+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:28:03.081+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:28:19.010+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:28:19.882+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:28:28.638+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:28:51.010+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:29:15.731+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:29:28.066+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:29:32.629+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:29:33.242+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:29:33.693+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T08:44:33.864+0500","message":"sql: no rows in result set"}
+{"level":"error","ts":"2021-03-03T16:45:10.107+0500","message":"ERROR: missing FROM-clause entry for table \"bobylev\" (SQLSTATE 42P01)"}
+{"level":"error","ts":"2021-03-03T16:45:19.049+0500","message":"ERROR: missing FROM-clause entry for table \"bobylev\" (SQLSTATE 42P01)"}
+{"level":"error","ts":"2021-03-03T16:46:30.089+0500","message":"ERROR: missing FROM-clause entry for table \"bobylev\" (SQLSTATE 42P01)"}
+{"level":"error","ts":"2021-03-03T16:46:44.808+0500","message":"ERROR: missing FROM-clause entry for table \"bobylev\" (SQLSTATE 42P01)"}
+{"level":"error","ts":"2021-03-03T16:48:59.076+0500","message":"ERROR: column \"int\" does not exist (SQLSTATE 42703)"}
+{"level":"error","ts":"2021-03-03T16:58:33.325+0500","message":"expected slice but got struct"}
+{"level":"error","ts":"2021-03-03T16:59:56.476+0500","message":"expected slice but got struct"}

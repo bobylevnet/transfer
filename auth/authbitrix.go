@@ -21,7 +21,9 @@ func Auth() st.Auhthb {
 
 	request()
 
-	auth := st.Auhthb{
+	var auth st.Auhthb
+
+	auth = st.Auhthb{
 		AccessToken: "88888888",
 		UserID:      1,
 		ClientID:    1,
@@ -30,6 +32,15 @@ func Auth() st.Auhthb {
 		UserName:    "bobylev.ss",
 	}
 
-	return auth
+	/*if i == "2" {
+	auth = st.Auhthb{
 
+		AccessToken: "66666666",
+		UserID:      1,
+		ClientID:    1,
+		Expires:     60,
+		Scope:       "",
+		UserName:    "test",
+	}*/
+	return auth
 }
