@@ -8,6 +8,3 @@ type Vtargetmodel struct {
 	UserTargetName string `db:target_name`
 	TargetName     string `db:target_name`
 }
-
-
-zsacaxzsc

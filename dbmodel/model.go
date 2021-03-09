@@ -58,7 +58,7 @@ func gensql(sql string, compare string) string {
 	   	}
 	   	for key, value := range sql {
 	   		txt = key + compare + value
-	   	}
-	   	return txt */
+	   	}*/
+	return ""
 
 }
