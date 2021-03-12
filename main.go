@@ -4,10 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"strconv"
 	a "transfer/auth"
 	cnt "transfer/controllers"
-	"transfer/dbmodel"
 	l "transfer/log"
 	"transfer/models"
 
@@ -19,65 +17,26 @@ func main() {
 
 	router.HandleFunc("/auth", auth)
 
-	router.HandleFunc("/route", getRoute)
+	//роуты файлов
+	router.HandleFunc("/files/upload/{iduser:[0-9]+}/{idtarget:[0-9]+}", cnt.FilesUploadAction)
+	router.HandleFunc("/files/select/{iduser:[0-9]+}", cnt.FilesSelectAction)
+
+	//роуты целей
+	router.HandleFunc("/target/select/{iduser:[0-9]+}", cnt.TargetSelectAction)
+
+	//выборка всех пользователей кому можно отправлять 
+	router.HandleFunc("/users/targets/{idtarget:[0-9]+}", cnt.UsersSelectAction)
+
+
+
+	//router.HandleFunc("/target", getRoute)
 	//добавляем корневой путь для статики
-	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./web/")))
+	//router.PathPrefix("/").Handler(http.FileServer(http.Dir("./web/")))
+
 	http.ListenAndServe(":89", router)
 }
 
 func getRoute(w http.ResponseWriter, r *http.Request) {
-
-	actionDT := map[string]string{}
-	dataDT := map[string]string{}
-	//filterDT := map[string]string{}
-
-	actionRQ, _ := r.URL.Query()["rest"]
-	dataRQ, _ := r.URL.Query()["datajs"]
-	idpkRQ, _ := r.URL.Query()["idpk"]
-	//filterRQ, _ := r.URL.Query()["filter"]
-
-	//действие
-	convertJS(&actionDT, actionRQ[0])
-	//данные
-	convertJS(&dataDT, dataRQ[0])
-	//фильтр данных
-	//convertJS(&filterDT, filterRQ[0])
-
-	//bm := models.Basemodel{}
-
-	//базовая модель
-	model := dbmodel.Model{}
-
-	bm := dbmodel.Basesql{
-		SQL: model,
-	}
-
-	bm.TableDB = "tr_" + actionDT["model"]
-
-	if idpkRQ != nil {
-		idpk, err := strconv.Atoi(idpkRQ[0])
-		bm.Idpk = idpk
-		if err != nil {
-			// handle error
-			fmt.Println(err)
-		}
-	}
-
-	wr := cnt.Writecontroller{}
-	wr.T = w
-
-	//предаем адрес  записи
-	//неправильно нужно пределать обработчик ошибок должен быть реализован везде
-
-	bm.Writeerror = &wr
-	if r.Method == "POST" {
-
-		bm.Request = r
-
-		cnt.ActionController(bm, actionDT, wr, dataDT)
-	} else {
-		cnt.ActionController(bm, actionDT, wr, dataDT)
-	}
 
 }
 
@@ -90,11 +49,11 @@ func convertJS(stst *map[string]string, reqJSON string) {
 	//var v []interface{}
 	//var tmp [string]string
 	//tmp := make(map[string]string)
-	b := []byte(reqJSON)
+	//b := []byte(reqJSON)
 
 	//	s := st.Filtered{}
 	//st["id_target"].(string)
-	json.Unmarshal([]byte(b), &stst)
+	//json.Unmarshal([]byte(b), &stst)
 
 	/* switch v.(type) {
 

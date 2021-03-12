@@ -52,3 +52,79 @@
 {"level":"error","ts":"2021-03-03T16:48:59.076+0500","message":"ERROR: column \"int\" does not exist (SQLSTATE 42703)"}
 {"level":"error","ts":"2021-03-03T16:58:33.325+0500","message":"expected slice but got struct"}
 {"level":"error","ts":"2021-03-03T16:59:56.476+0500","message":"expected slice but got struct"}
+{"level":"error","ts":"2021-03-10T17:27:34.622+0500","message":"missing destination name date_create in *models.Filesmodel"}
+{"level":"error","ts":"2021-03-10T17:27:36.767+0500","message":"missing destination name date_create in *models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:50:45.380+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:50:45.393+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:50:45.394+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:50:56.968+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:50:56.968+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:50:56.968+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:55:08.272+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:55:08.272+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:55:08.272+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:58:45.942+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:58:45.943+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:58:45.943+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:59:56.156+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:59:56.156+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T09:59:56.156+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:00:26.069+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:00:26.069+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:00:26.070+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:04:03.052+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:04:03.052+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:04:03.052+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:05:32.901+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:05:32.902+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:05:32.902+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:10:48.865+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:10:48.881+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:10:48.881+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:11:36.777+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:11:36.778+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:11:36.778+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:11:48.061+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:11:48.061+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:11:48.061+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:12:18.133+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:12:18.133+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:12:18.133+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:13:14.243+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:13:14.243+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-11T10:13:14.243+0500","message":"missing destination name user_target_id in **models.Filesmodel"}
+{"level":"error","ts":"2021-03-12T10:27:27.725+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:29:17.539+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:30:36.176+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:30:57.586+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:31:37.389+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:31:52.468+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:32:22.509+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:32:49.451+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:33:39.993+0500","message":"missing destination name id_target in *models.Users"}
+{"level":"error","ts":"2021-03-12T10:43:28.179+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:43:28.199+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:43:28.199+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:44:28.339+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:44:28.356+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:44:28.356+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:45:48.769+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:45:48.769+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:45:48.769+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T10:48:01.393+0500","message":"missing destination name full_name_user in **models.Targetmodel"}
+{"level":"error","ts":"2021-03-12T11:54:49.217+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:54:53.571+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:54:56.425+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:54:57.610+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:54:58.889+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:54:59.970+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:01.494+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:02.856+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:04.153+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:04.926+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:06.010+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:18.712+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:19.722+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:20.568+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:55:21.732+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-12T11:57:31.556+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}

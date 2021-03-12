@@ -251,7 +251,7 @@ func selectdata(result *string, rows *sqlx.Rows, dynamyc map[string]interface{})
 
 	var i int
 
-	/*  	dmodel := make(map[string]interface{})
+	/*dmodel := make(map[string]interface{})
 	//копируем кату dynnamycmodel в dmodel
 	for key, value := range dyn {
 		dmodel[key] = value
