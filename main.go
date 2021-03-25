@@ -24,14 +24,15 @@ func main() {
 	//роуты целей
 	router.HandleFunc("/target/select/{iduser:[0-9]+}", cnt.TargetSelectAction)
 
-	//выборка всех пользователей кому можно отправлять 
+	//выборка всех пользователей кому можно отправлять
 	router.HandleFunc("/users/targets/{idtarget:[0-9]+}", cnt.UsersSelectAction)
 
-
+	//вовзращаем иконку
+	router.HandleFunc("/icons/", cnt.IconsGetAction)
 
 	//router.HandleFunc("/target", getRoute)
 	//добавляем корневой путь для статики
-	//router.PathPrefix("/").Handler(http.FileServer(http.Dir("./web/")))
+	router.PathPrefix("/").Handler(http.FileServer(http.Dir("./web/")))
 
 	http.ListenAndServe(":89", router)
 }

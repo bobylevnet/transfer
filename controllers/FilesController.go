@@ -3,6 +3,8 @@ package controllers
 import (
 	"fmt"
 	"net/http"
+	"strconv"
+	"transfer/log"
 	md "transfer/models"
 
 	"github.com/gorilla/mux"
@@ -11,8 +13,14 @@ import (
 func FilesUploadAction(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 
-	if md.FilesUpload(r, vars["IDuser"], vars["IDtarget"]) {
+	iduser, err := strconv.Atoi(vars["iduser"])
+	log.WriteError(err)
 
+	idtarget, err := strconv.Atoi(vars["idtarget"])
+	log.WriteError(err)
+
+	if md.FilesUpload(r, iduser, idtarget) {
+		fmt.Fprintf(w, "true")
 	}
 
 }

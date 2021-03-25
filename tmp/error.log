@@ -128,3 +128,31 @@
 {"level":"error","ts":"2021-03-12T11:55:20.568+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
 {"level":"error","ts":"2021-03-12T11:55:21.732+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
 {"level":"error","ts":"2021-03-12T11:57:31.556+0500","message":"sql: expected 2 destination arguments in Scan, not 1"}
+{"level":"error","ts":"2021-03-18T13:30:40.945+0500","message":"open ./assets/zondiconstarget.svg: The system cannot find the path specified."}
+{"level":"error","ts":"2021-03-18T13:31:15.743+0500","message":"open ./assets/zondiconstarget.svg: The system cannot find the path specified."}
+{"level":"error","ts":"2021-03-18T13:33:12.326+0500","message":"open ./web/assets/zondiconstarget.svg: The system cannot find the file specified."}
+{"level":"error","ts":"2021-03-18T14:33:28.063+0500","message":"open ./web/assets/zondicons/undefined.svg: The system cannot find the file specified."}
+{"level":"error","ts":"2021-03-18T14:43:05.570+0500","message":"open ./web/assets/zondicons/undefined.svg: The system cannot find the file specified."}
+{"level":"error","ts":"2021-03-19T10:11:52.186+0500","message":"open /web/assets/zondicons/target.svg: The system cannot find the path specified."}
+{"level":"error","ts":"2021-03-19T10:11:52.204+0500","message":"open /web/assets/zondicons/album.svg: The system cannot find the path specified."}
+{"level":"error","ts":"2021-03-22T17:42:26.831+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:42:26.866+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:44:32.046+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:44:32.047+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:48:56.319+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:48:56.320+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:49:28.192+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:49:28.193+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:50:01.005+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:50:01.006+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:54:02.030+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:54:02.031+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:55:43.739+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:55:43.740+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:55:56.090+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-22T17:55:56.090+0500","message":"Prepared statement \"\" requires 2 parameters, but 6 were provided"}
+{"level":"error","ts":"2021-03-23T09:33:24.722+0500","message":"sql: Scan error on column index 0, name \"target_name\": unsupported Scan, storing driver.Value type string into type *models.Targetname"}
+{"level":"error","ts":"2021-03-23T09:52:29.201+0500","message":"sql: Scan error on column index 0, name \"target_name\": unsupported Scan, storing driver.Value type string into type *models.Targetname"}
+{"level":"error","ts":"2021-03-23T09:54:45.393+0500","message":"missing destination name target_name in *models.Targetname"}
+{"level":"error","ts":"2021-03-23T14:05:35.261+0500","message":"write ./upload//bobylev.ss/Изобретательская деятельность/VSCodeUserSetup-x64-1.53.2.exe.zip: There is not enough space on the disk."}
+{"level":"error","ts":"2021-03-23T15:02:56.831+0500","message":"write ./upload//bobylev.ss/Изобретательская деятельность/VSCodeUserSetup-x64-1.48.2.exe.zip: There is not enough space on the disk."}
